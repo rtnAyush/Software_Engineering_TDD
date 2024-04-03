@@ -2,7 +2,7 @@
 	"name": "link-ease",
 	"private": true,
 	"version": "0.0.0",
-	"type": "module",
+	"type": "commonjs",
 	"scripts": {
 		"start": "node main.js",
 		"dev": "nodemon main.js",
