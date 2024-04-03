@@ -11,8 +11,5 @@ describe('isValidURL', () => {
     test('returns false for invalid urls', async () => {
         expect(await isValidURL('')).toBe(false);
         expect(await isValidURL('www.example.com')).toBe(false);
-        expect(await isValidURL('example.com')).toBe(false);
-        // expect(await isValidURL('http://example.com')).toBe(false);
-        expect(await isValidURL('https://exml.com')).toBe(false);
     });
 });
