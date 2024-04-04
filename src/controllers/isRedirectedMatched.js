@@ -1,8 +1,9 @@
 async function isRedirectedMatched(url, expectedUrl) {
 
     try {
-        const res = await fetch(url);
-        if (res.status === 301 && res.url === expectedUrl) {
+        const res = await fetch(url, { method: 'GET' });
+
+        if (res.redirected && res.url.includes(expectedUrl)) {
             return true;
         }
         return false;
