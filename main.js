@@ -1,11 +1,11 @@
-import express from "express";
+const express = require("express");
 const app = express();
-import routes from "./src/routes/index.js";
-import dotenv from 'dotenv';
+const routes = require("./src/routes/index.js");
+const dotenv = require('dotenv');
 dotenv.config();
-import path from 'path';
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
+const path = require('path');
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
 mongoose
     .connect(process.env.MONGO_URI)
