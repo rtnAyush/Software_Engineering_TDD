@@ -1,5 +1,5 @@
-import express from "express";
-import urlRoutes from "./url.routes.js";
+const express = require("express");
+const urlRoutes = require("./url.routes.js");
 const router = express.Router();
 
 router.use("/", urlRoutes);
@@ -9,4 +9,4 @@ router.use("/", urlRoutes);
 //     res.status(404).json({ error: "Page not found" });
 // });
 
-export default router;
+module.exports = router;
